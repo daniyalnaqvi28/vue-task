@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'JT Marine';
+  src: url('/src/assets/fonts/JTMarine-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/JTMarine-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'JT Marine', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+ 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.f-12{
+  font-size: clamp(0.75rem, 0.251vw + 0.699rem, 0.85rem)
+}
+.f-24{
+   font-size: clamp(1.125rem, 0.376vw + 1.049rem, 1.5rem);
+}
+.profile-img{
+   height: 60px;
+   width: 60px;
+}
+.text-primary{
+   color: #00519B;
+}
+.text-secondary{
+   color: #999999;
+}
+.sort-dropdown{
+   background-color: #00417E;
+   color: white;
+   position: relative;
+}
+.stepper{
+   height: 52px;
+   background-color: #F2FBFF;
+}
+.active-tab .tab-img{
+   background-color: #058CF1;
+   border-radius: 50rem;
+   padding: 10px;
+}
+.active-tab .tab-label{
+   color: #058CF1;
+}
+.non-active .tab-img{
+   background-color: #545454;
+   border-radius: 50rem;
+   padding: 10px;
+}
+.non-active .tab-label{
+   color: #545454;
+
+}
+.slide-range{
+   margin-top: -10px;
+}
+.properties-bar{
+   background-color: #00315E;
+   height: 42px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
