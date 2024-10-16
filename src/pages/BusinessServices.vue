@@ -18,12 +18,7 @@ import axios from 'axios';
 import endPoints from '../assets/api/EndPoints';
 const fetchData = async () => {       
     try {
-        const response = await axios.get(endPoints.vacancyListing, {
-            params: {
-            type: 'sale',
-            page: 1,
-            },
-        });
+        const response = await axios.get('https://development.ziba-property.com/api/vacancy?type=sale&page=1');
              console.log(response.data);
         } catch (err) {
             console.error( err);

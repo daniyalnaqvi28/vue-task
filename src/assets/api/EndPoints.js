@@ -1,5 +1,5 @@
 const endPoints = {
-    vacancyListing: '/api/vacancy',
+    vacancyListing: '/vacancy',
 };
 
 export default endPoints;

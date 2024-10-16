@@ -8,15 +8,10 @@ export default defineConfig({
       '/api': {
         target: 'https://development.ziba-property.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-         configure: (proxy) => {
-          proxy.on('proxyReq', (proxyReq, req, res) => {
-            console.log(`Request made to: ${req.url}`);
-          });
-        },
-      },
-    },
-  },
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  }
 });
 
 
